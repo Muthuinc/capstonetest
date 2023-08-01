@@ -14,7 +14,7 @@ a=$(aws ec2 describe-instances --region ap-south-1 --filters "Name=tag:Env,Value
 
 export psw1="$1"
 
-scp -o StrictHostKeyChecking=no -i "$psw1" docker-compose.yml ubuntu@$a
+scp -o StrictHostKeyChecking=no -i "$psw1" docker-compose.yml ubuntu@$a:/home/ubuntu
 
 ssh -o StrictHostKeyChecking=no -i "$psw1" ubuntu@$a <<EOF
 
