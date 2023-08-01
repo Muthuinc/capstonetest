@@ -1,0 +1,7 @@
+version: "3"
+services:
+  nginx:
+    image: muthuinc/react:v1
+    container_name: muthu
+    ports:
+      - "80:80"
