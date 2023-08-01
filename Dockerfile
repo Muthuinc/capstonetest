@@ -1,4 +1,4 @@
-FROM node:alpine As build
+FROM node:14 As build
 
 WORKDIR /muthu
 
